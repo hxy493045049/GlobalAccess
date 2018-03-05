@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--***********************通用***********************-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_horizontal_padding">12dp</dimen>
+
+
+    <!--**************bottom_button**************-->
+    <dimen name="bottom_height">50dp</dimen>
+    <!--列表距離底部的高度50+1(分割綫的1dp)-->
+    <dimen name="margin_bottom_height">51dp</dimen>
+
+
+    <!--**************floatingbotton**************-->
+    <!--由于5.0以下会自动增加内边距,所以定义不同的值-->
+    <dimen name="floating_action_button_margin">0dp</dimen>
+    <!--fab距离底部的高度 -->
+    <dimen name="floating_bottom">65dp</dimen>
+    <!--静止时z轴的高度-->
+    <dimen name="static_Z">6dp</dimen>
+    <dimen name="pressed_Z">12dp</dimen>
+
+
+    <!--**************tablayout**************-->
+    <!--tab_layout的高度-->
+    <dimen name="tab_layout_height">45dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+</resources>

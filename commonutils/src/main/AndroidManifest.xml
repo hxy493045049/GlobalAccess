@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.msy.zc.commonutils">
+    <uses-sdk tools:overrideLibrary="jp.wasabeef.glide.transformations"/>
+    <application
+        android:allowBackup="false"
+        >
+
+    </application>
+
+</manifest>

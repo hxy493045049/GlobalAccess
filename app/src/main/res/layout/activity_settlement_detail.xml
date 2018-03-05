@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swpSettlementDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/divider_color"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/appCompatTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/settlement_pay_number"
+                        android:textColor="@color/text_primary_dark"
+                        android:textSize="@dimen/sp_14"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementPayNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:textColor="@color/text_primary_dark"
+                        android:textSize="@dimen/sp_14"
+                        tools:text="666666666666661111"/>
+                </LinearLayout>
+
+                <View style="@style/Divider"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+                        android:text="@string/settlement_team_num"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementTeamNumber"
+                        style="@style/SettlementDetailTvRight"
+                        tools:text="120545684345454"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+                        android:text="@string/settlement_type"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementType"
+                        style="@style/SettlementDetailTvRight"
+                        tools:text="预支付"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+                        android:text="@string/settlement_method"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementMethod"
+                        style="@style/SettlementDetailTvRight"
+                        tools:text="实时结算"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+                        android:text="@string/settlement_expenditure_unit"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementExpenditureUnit"
+                        style="@style/SettlementDetailTvRight"
+                        tools:text="康辉旅行社(中间账号)"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+                        android:text="@string/settlement_income_unit"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementIncomeUnit"
+                        style="@style/SettlementDetailTvRight"
+                        tools:text="康辉旅行社"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+                        android:text="@string/settlement_prepayments"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementPrepayments"
+                        style="@style/SettlementDetailTvRight"
+                        tools:text="@string/holder_money_double"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+                        android:text="@string/settlement_commit_money"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementCommitMoney"
+                        style="@style/SettlementDetailTvRight"
+                        tools:text="@string/holder_money_double"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+                        android:text="@string/settlement_concerned_department"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementConcernedDepartment"
+                        style="@style/SettlementDetailTvRight"
+                        tools:text="张家界公园景区"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+                        android:text="@string/settlement_consumption_money"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementConsumptionMoney"
+                        style="@style/SettlementDetailTvRight"
+                        tools:text="@string/holder_money_double"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+                        android:text="@string/settlement_status"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementStatus"
+                        style="@style/SettlementDetailTvRight"
+                        tools:text="结算状态"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <LinearLayout style="@style/SelectableItemBg">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+                        android:text="@string/settlement_creator"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementCreator"
+                        style="@style/SettlementDetailTvRight"
+                        tools:text="创建者"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <LinearLayout
+                    style="@style/SelectableItemBg"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/list_item_height">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/SettlementDetailTvLeft"
+
+                        android:text="@string/settlement_description"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvSettlementDesc"
+                        style="@style/SettlementDetailDesc"
+                        tools:text="描述"/>
+                </LinearLayout>
+
+                <View style="@style/DividerMarginLeft_12"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnSettlement"
+        style="@style/CommonBottomBtnStyle"
+        android:text="@string/settlement"
+        android:visibility="gone"/>
+</LinearLayout>

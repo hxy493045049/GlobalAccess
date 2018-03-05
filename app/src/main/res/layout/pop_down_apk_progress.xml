@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_startup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.msy.globalaccess.business.navigation.StartupActivity">
+    <TextView
+        android:id="@+id/down_apk_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_top2"
+        android:text="总大小：0M   已下载0M"/>
+    <TextView
+        android:id="@+id/down_apk_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/down_apk_total"
+        android:layout_marginTop="@dimen/view_padding"
+        android:text="速度：0Kb/s"/>
+    <ProgressBar
+        android:id="@+id/down_apk_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="@dimen/view_padding"
+        android:layout_below="@+id/down_apk_speed"
+        android:progress="1"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_marginRight="@dimen/view_margin"
+        android:layout_centerVertical="true"
+        android:progressDrawable="@drawable/theme_progress_drawable"
+        android:layout_marginBottom="@dimen/margin_top2"
+         />
+    <TextView
+        android:id="@+id/down_apk_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/down_apk_progressBar"
+        android:background="@mipmap/divider_line"
+        />
+    <LinearLayout
+        android:layout_below="@+id/down_apk_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@mipmap/divider_line"
+        android:background="@drawable/fillet4_solidwhite_strokegray_down"
+        android:showDividers="middle"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/down_apk_ll_pause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/down_apk_btn_pause"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="暂停"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/down_apk_ll_colse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/down_apk_btn_colse"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:gravity="center"
+                android:text="关闭"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

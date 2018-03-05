@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swpDatePreview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--summary here-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/ivTeamBulletin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/content_description"
+                    android:src="@mipmap/icon_team_bulletin"/>
+
+                <ImageView
+                    android:id="@+id/ivDivider"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@id/ivTeamBulletin"
+                    android:contentDescription="@string/content_description"
+                    android:src="@color/divider_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/ivDivider"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:drawablePadding="8dp"
+                            android:drawableStart="@drawable/chart_solid_black_theme_3dp"
+                            android:gravity="center"
+                            android:text="今日创建团队数:\t\t"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:id="@+id/tvCreateTeamSize"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="@string/holder_count"
+                            android:textColor="@color/text_guide_blue"
+                            android:textSize="13sp"
+                            tools:text="67432个"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:drawablePadding="8dp"
+                            android:drawableStart="@drawable/chart_solid_black_theme_3dp"
+                            android:gravity="center"
+                            android:text="今日在途团队数:\t\t"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:id="@+id/tvCisborderTeamSize"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="@string/holder_count"
+                            android:textColor="@color/text_guide_blue"
+                            android:textSize="13sp"
+                            tools:text="123421个"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:drawablePadding="8dp"
+                            android:drawableStart="@drawable/chart_solid_black_theme_3dp"
+                            android:gravity="center"
+                            android:text="今日在途游客数:\t\t"
+                            android:textColor="@color/text_primary_dark"
+                            android:textSize="13sp"/>
+
+                        <TextView
+                            android:id="@+id/tvCisborderGuestsNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:text="@string/holder_peopel_num"
+                            android:textColor="@color/text_guide_blue"
+                            android:textSize="13sp"
+                            tools:text="219672人"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!--今日景区认证-->
+            <FrameLayout
+                android:id="@+id/temp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/scenic_statistics"
+                    layout="@layout/item_team_statistics"/>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/divider_color"/>
+
+
+            <!--景区客流趋势-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/layoutsheet_statistics_linar"/>
+            </FrameLayout>
+
+
+            <!--今日客源地总览-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/item_team_statistics"
+                    layout="@layout/layout_pie_origin"/>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/divider_color"/>
+
+            <!--境内外游客对比-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/abroad_statistics"
+                    layout="@layout/layoutsheet_statistics_linar"/>
+            </FrameLayout>
+
+            <!--性别-->
+            <FrameLayout
+                android:id="@+id/framelayout_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/sex_statistics"
+                    layout="@layout/layout_pie_origin"/>
+            </FrameLayout>
+
+            <!--年龄-->
+            <FrameLayout
+                android:id="@+id/framelayoutAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/layoutsheet_custom_columnview"/>
+            </FrameLayout>
+
+            <!--景区认证时间分布-->
+            <FrameLayout
+                android:id="@+id/scnicAuthTimeStatistics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <include
+                    layout="@layout/item_guide_statistics"/>
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="@color/divider_color"/>
+            <!--团队停留天数统计-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/stayday_statistics"
+                    layout="@layout/layoutsheet_statistics_linar"/>
+            </FrameLayout>
+
+            <!--旅游人.天趋势分析-->
+            <FrameLayout
+                android:id="@+id/flPeopleAndDayView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <include
+                    android:id="@+id/llPeopleAndDayView"
+                    layout="@layout/item_guide_statistics"/>
+            </FrameLayout>
+
+            <!--团队趋势分析-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <include
+                    android:id="@+id/item_guide_statistics"
+                    layout="@layout/item_guide_statistics"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

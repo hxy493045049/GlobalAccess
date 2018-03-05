@@ -1,0 +1,383 @@
+<resources>
+    <string name="app_name">全域通</string>
+
+    <!--accessibility hint  无障碍提示-->
+    <string name="content_description">null</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--通用-->
+    <string name="delete">删除</string>
+    <string name="exit">再按一次退出程序</string>
+    <string name="small_dialog">请稍候…</string>
+    <string name="exiting">注销中…</string>
+    <string name="digits">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="digits_number">0123456789</string>
+    <string name="choose">选择</string>
+    <string name="commit">提交</string>
+    <string name="commiting">提交中…</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="protocol_hint">我已阅读并同意</string>
+    <string name="protocol_delegate_link">委派条款</string>
+    <string name="dialog_title">提示</string>
+    <string name="separator">|</string>
+    <string name="delegate_pact">method=appTeamGuideClause</string>
+    <string name="tean_newspaper">团队快报</string>
+    <string name="scenic">景点</string>
+
+
+    <!--异常-->
+    <string name="db_error">数据库出错了</string>
+    <string name="internet_error">网络异常,请检查网络设置</string>
+    <string name="request_error">参数异常,请稍后再试</string>
+    <string name="resolve_error">结果解析异常,请稍后再试</string>
+
+    <!--带符号的占位符-->
+    <string name="holder_money_double">¥%.2f</string>
+    <string name="holder_money_double_no_money">%.2f</string>
+    <string name="holder_money_string">¥%sf</string>
+    <string name="holder_count">%s个</string>
+    <string name="holder_peopel_num">%s人</string>
+
+    <!--团队状态  有10种-->
+    <string name="team_status_editing">编辑中</string>
+    <string name="team_status_applied">已提交申请</string>
+    <string name="team_status_effected">生效</string>
+    <string name="team_status_discard">作废</string>
+    <string name="team_status_change">变更</string>
+
+    <!--结算单状态-->
+    <string name="order_status_waitting">待结算</string>
+    <string name="order_status_calculating">结算中</string>
+    <string name="order_status_success">结算成功</string>
+    <string name="order_status_failed">结算失败</string>
+
+    <!--************************导游委派************************-->
+    <!--委派状态-->
+    <string name="delegate_state_processing">处理中</string>
+    <string name="delegate_state_unprocess">未通过</string>
+    <string name="delegate_state_processed">已通过</string>
+
+    <!--处理类型-->
+    <string name="delegate_state_apply_process">申请委派</string>
+    <string name="delegate_state_cancle_process">取消委派</string>
+
+
+    <!--************************登录模块************************-->
+    <!--登录页文字提示-->
+    <string name="login_title">全域通旅游管理系统</string>
+    <string name="login_user_namehit">请输入用户名</string>
+    <string name="login_user_pwhit">请输入密码</string>
+    <string name="login_user_empty">用户名和密码不允许为空</string>
+    <string name="login">登录</string>
+
+    <!--************************系统模块************************-->
+    <!--系统设置相关的-->
+    <string name="personal_center_user_login_account">登录账号</string>
+    <string name="personal_center_user_name">名称</string>
+    <string name="personal_center_user_phone">手机</string>
+    <string name="personal_center_user_telephone">固定电话</string>
+    <string name="personal_center_user_email">电子邮箱</string>
+    <string name="personal_center_user_address">联系地址</string>
+    <string name="personal_center_user_system">所属系统</string>
+    <string name="personal_center_user_company">所属单位</string>
+    <string name="personal_center_user_department">所属部门</string>
+    <string name="personal_center_user_logout">退出登录</string>
+
+    <!--************************团队模块************************-->
+    <!--团队管理-->
+    <string name="team_id">团队编号 :\t</string>
+    <string name="team_department">部门 :\t</string>
+    <string name="team_number_of_people">总人数 :\t</string>
+    <string name="team_prepayment">总预付款 :\t ￥</string>
+    <string name="handle_type">处理类型</string>
+    <string name="team_result">处理结果</string>
+    <!-- 团队详情审批 -->
+    <string name="approval_invalid_application">是否确认提交作废申请？</string>
+    <string name="approval_success_invalid">作废审批提交成功</string>
+    <string name="approval_success_group">出团成功</string>
+    <string name="approval_change_travel">确定变更此行程？</string>
+
+    <!--付款状态-->
+    <string name="billing_status_unpaid">未预付</string>
+    <string name="billing_status_paid_unsettled">已预付,待结算</string>
+    <string name="billing_status_settled">已完成结算</string>
+
+    <!--处理类型-->
+    <string name="billing_oper_type_group">出团申请</string>
+    <string name="billing_oper_type_discard">作废申请</string>
+    <string name="billing_oper_type_change">变更申请</string>
+
+
+    <!--处理结果-->
+    <string name="billing_oper_status_wait">待确认</string>
+    <string name="billing_oper_status_pass">已通过</string>
+    <string name="billing_oper_status_refuse">未通过</string>
+
+    <!-- 运输车辆-->
+    <string name="item_transport_model">用车模式：</string>
+    <string name="item_transport_company">用车公司：</string>
+    <string name="item_transport_tel">司机电话：</string>
+    <string name="item_plate_number">车牌号：</string>
+    <string name="item_model_number">车辆型号：</string>
+    <string name="item_seat_count">座位数量：</string>
+    <string name="item_prepay">预付：</string>
+    <string name="item_remark">备注：</string>
+    <string name="transport_info">车辆信息</string>
+
+    <!-- 导游-->
+    <string name="item_ciceroniInfo_title">导游：</string>
+    <string name="item_ciceroniInfo_account">导游帐号：</string>
+    <string name="item_ciceroniInfo_name">姓名：</string>
+    <string name="item_ciceroniInfo_tel">导游电话：</string>
+    <string name="item_ciceroniInfo_delegate">委派：</string>
+    <string name="item_ciceroniInfo_unit">挂靠机构：</string>
+    <string name="ciceroni_info">导游信息</string>
+
+    <!--导游增删改-->
+    <string name="guider_change">导游变更</string>
+    <string name="guider_add">新增导游</string>
+    <string name="guider_delegate">委派</string>
+    <string name="guider_delegate_cancel">取消委派</string>
+    <string name="guider_identity_number">导游证号</string>
+    <string name="guider_delegate_time">委派时间</string>
+    <string name="guider_affiliate_unit">挂靠机构</string>
+    <!--编辑导游-->
+    <string name="guider_edit_title">编辑导游</string>
+    <string name="guider_phone">手机号</string>
+    <string name="guider_delegate_period">委派期间</string>
+    <string name="guider_period_begin">开始时间</string>
+    <string name="guider_period_end">结束时间</string>
+    <!--导游委派-->
+    <string name="guider_identify_number">导游证号</string>
+    <string name="guider_name">姓名</string>
+    <string name="guider_gender">性别</string>
+    <string name="guider_delegate_begin">委派开始时间</string>
+    <string name="guider_delegate_end">委派结束时间</string>
+    <string name="guider_affiliate">旅行社</string>
+    <string name="guider_delegate_status">委派状态</string>
+    <string name="guider_delegate_operation">委派操作</string>
+    <string name="guider_delegate_title">导游委派</string>
+    <string name="guider_invalid_time">开始时间不能大于结束时间</string>
+    <string name="guider_time_outof_range">选择时间不在范围之内</string>
+
+    <!--新增导游-->
+    <string name="guider_identity_number1">导游证号  :</string>
+    <string name="guider_affiliate1">挂靠机构  :</string>
+    <string name="guider_filter_identity_number_hint">请输入导游证号</string>
+    <string name="guider_filter_affiliate_unit_hint">请输入挂靠机构</string>
+    <string name="guider_filter_name_hint">请输导游姓名</string>
+
+    <string name="guider_area">地区</string>
+    <string name="guider_info">导游信息</string>
+    <string name="guider_language">全部语种</string>
+
+    <!--导游变更提示语-->
+    <string name="hint_cancel_change_guider">您确认放弃当前导游变更？</string>
+    <string name="hint_delete_guider">您确认删除该导游？</string>
+    <string name="hint_commit_change_guider">您确认提交当前导游变更信息？</string>
+    <string name="hint_commit_unchange_guider">您未做任何变更，确认提交吗？</string>
+    <string name="hint_invalid_guider">当前存在未委派的导游</string>
+    <string name="hint_delegate_guider">您确认委派该导游？</string>
+    <string name="hint_cancel_delegate_guider">您确认取消委派该导游？</string>
+    <string name="hint_atleast_one_guider">请至少保留一条有效导游</string>
+    <string name="hint_change_success">变更成功</string>
+    <string name="hint_no_change">您未做任何变更</string>
+    <string name="hint_guider_exist">该导游已存在</string>
+    <string name="hint_no_guider_choose">您还未选择相关导游</string>
+    <string name="guider_delegate_read_info">您还未同意委派条款</string>
+
+    <!--************************结算模块************************-->
+
+    <string name="settlement_team_number">团队编号 : \t</string>
+    <string name="settlement_pay_number">支付编号 : \t</string>
+    <string name="settlement_money">提交结算金额 : \t</string>
+
+    <!--结算单类型-->
+    <string name="order_type_prepay">预支付</string>
+    <string name="order_type_append">追加预支付</string>
+    <string name="order_type_pay">支付</string>
+    <string name="order_type_refund">退款</string>
+    <!--结算单方式-->
+    <string name="settlement_method_real_time">实时结算</string>
+    <string name="settlement_method_delay">暂延结算</string>
+
+    <!--结算详情-->
+    <string name="settlement_detail_title">结算详情</string>
+    <string name="settlement_detail_query">结算查询</string>
+    <string name="settlement_team_num">团队编号</string>
+    <string name="settlement_type">结算类型</string>
+    <string name="settlement_method">结算方式</string>
+    <string name="settlement_expenditure_unit">支出单位</string>
+    <string name="settlement_income_unit">收入单位</string>
+    <string name="settlement_prepayments">预付款</string>
+    <string name="settlement_commit_money">提交结算金额</string>
+    <string name="settlement_concerned_department">相关单位</string>
+    <string name="settlement_consumption_money">消费金额</string>
+    <string name="settlement_status">结算状态</string>
+    <string name="settlement_creator">支付创建者</string>
+    <string name="settlement_description">支付描述</string>
+    <string name="settlement">结算</string>
+    <string name="settlement_success">结算成功</string>
+    <string name="settlement_successed">已成功结算</string>
+    <string name="settlement_back_list">查看列表</string>
+    <string name="settlement_bank">结算银行 :\t</string>
+
+
+    <!--************************查询模块************************-->
+    <!--查询结算-->
+    <string name="settlemnet_filter_condition">筛选条件</string>
+    <string name="settlemnet_select_condition">查询条件</string>
+    <string name="settlemnet_select_value">取值/状态</string>
+    <string name="settlemnet_select_do">操作</string>
+    <string name="settlement_select_condition">添加查询条件</string>
+    <string name="settlement_select_reset">重置</string>
+    <string name="settlement_select_query">查询</string>
+    <string name="settlement_edit_hit">请输入团队编号</string>
+    <string name="settlement_query_team">团队查询</string>
+    <string name="settlement_query_examine">审批查询</string>
+    <string name="search_ciceroniInfo">游客查询</string>
+    <string name="search_all_condition_added">已添加所有条件</string>
+    <string name="search_condition_existed">已添加此条件</string>
+    <string name="search_error_time">结束日期需要大于开始日期</string>
+    <string name="search_error_condition">条件填写不完整</string>
+    <string name="search_guider_title">导游委派查询</string>
+    <string name="search_atleast_one">默认添加一条筛选条件</string>
+
+
+    <!--************************首页************************-->
+    <!--首页相关的文字描述-->
+    <string name="guide_title">张家界全域通</string>
+    <string name="guide_online_team_count">·　今日在线团队：</string>
+    <string name="guide_certification_team_count">·　今日景区认证团数：</string>
+    <string name="guide_custom_count">·　今日游客数量： </string>
+    <string name="guide_unit_1">人</string>
+    <string name="guide_unit_2">个</string>
+    <string name="guide_unit_3">万人</string>
+    <string name="guide_travel_title">旅行社接待团队统计</string>
+    <string name="guide_travel_description1">接待团队总量</string>
+    <string name="guide_travel_description2">境内地接：</string>
+    <string name="guide_travel_description3">入境地接：</string>
+    <string name="guide_guide_title">导游带团统计</string>
+    <string name="guide_guide_description1">今日带团导游</string>
+    <string name="guide_guide_description2">出境领队：</string>
+    <string name="guide_guide_description3">赴台领队：</string>
+    <string name="guide_team_title">团队客源统计</string>
+    <string name="guide_scenic_title">今日核心景区预约</string>
+
+    <!--旅行社底部按钮提示-->
+    <string name="team">团队管理</string>
+    <string name="settlement_manager">结算管理</string>
+    <string name="system_setting">个人中心</string>
+    <!--旅游局底部按钮提示-->
+    <string name="statistics">统计查询</string>
+    <string name="team_detail">团队明细</string>
+
+    <!--************************控件相关************************-->
+    <!--密码控件-->
+    <string name="setting_import_transaction_paswd">请输入6位交易密码</string>
+    <string name="setting_forget_transaction_paswd">忘记交易密码</string>
+
+
+    <!--************************侧滑栏(暂时不用)************************-->
+    <string name="guide_management">导游管理</string>
+    <string name="supervision_management">监管管理</string>
+    <string name="car_management">车辆管理</string>
+    <string name="destination_management">目的地管理</string>
+    <string name="team_management">团队管理</string>
+    <string name="settlement_management">结算管理</string>
+    <string name="travel_agency_management">旅行社管理</string>
+
+
+    <!--景点相关-->
+    <string name="scenic_title">编辑景点</string>
+    <string name="scenic_new_title">新增景点</string>
+    <string name="edit_scenic_info">景点信息</string>
+    <string name="edit_ticket_info">订票信息</string>
+    <string name="edit_scenic_remark">备注信息</string>
+    <string name="edit_scenic_count_info">订票数量</string>
+    <string name="edit_scenic_sure">确定</string>
+    <string name="edit_scenic_cancel">取消</string>
+    <string name="prepay">预付资金</string>
+    <string name="peoper_count">人数</string>
+    <string name="ticket_man">成人票</string>
+    <string name="ticket_info">门票信息</string>
+    <string name="ticket_child">儿童票</string>
+    <string name="ticket_old_man">老年票</string>
+    <string name="change_scenic_spot">选择景点</string>
+    <string name="ticket_man_hint">请输入成人票数量</string>
+    <string name="ticket_child_hint">请输入儿童票数量</string>
+    <string name="ticket_old_man_hint">请输入老年票数量</string>
+    <string name="remark_hint">请填写备注的信息，如无可不填写</string>
+    <string name="settle_accounts">结算方式</string>
+    <string name="scenic_ticket_nothing">此景点不可编辑或添加</string>
+    <string name="edit_scenic_save_tiket_info">您确认保存景点及订票信息</string>
+    <string name="edit_scenic_save_info">您确认保存景点信息</string>
+    <string name="edit_scenic_more_people">订票数量大于团队总人数</string>
+
+    <!-- 旅游局统计查询 -->
+    <string name="statistics_trip_data">行程日期：</string>
+    <string name="statistics_all_team">总团数：</string>
+    <string name="statistics_all_people">总人数：</string>
+
+
+    <!--********************************旅游局*************************************************************-->
+    <string name="travel_group_title">行程日期</string>
+    <string name="travel_begin">行程日期</string>
+    <string name="travel_end">行程结束日期</string>
+
+    <string name="creater_group_title">创建日期范围</string>
+    <string name="create_start">创建开始日期</string>
+    <string name="create_end">创建结束日期</string>
+
+
+    <string name="authentication_group_title">认证时间</string>
+    <string name="authentication_start">认证开始时间</string>
+    <string name="authentication_end">认证结束时间</string>
+
+    <string name="team_type">团队类型</string>
+    <string name="team_state">团队状态</string>
+    <string name="guest_source">客源地</string>
+    <string name="all">全部</string>
+
+    <!--数据概览页面-->
+    <string name="data_preview">数据概览</string>
+    <string name="tourist_delegate">导游委派</string>
+
+
+    <!-- 导游委派列表 -->
+    <string name="delegate_team_number">团队编号 : \t</string>
+    <string name="delegate_team_guider">委派导游 : \t</string>
+    <string name="delegate_create_time">创建时间 : \t</string>
+
+    <!--****************************统计相关****************************-->
+
+    <!--景区认证时间分布-->
+    <string name="auth_time_scenic_name">景点</string>
+    <string name="auth_time_scenic_time">今日</string>
+    <string name="auth_time_unit">数量(人)</string>
+    <string name="auth_time_title">景区认证时间分布</string>
+    <string name="auth_time_hint">今日景区认证时间分布</string>
+    <!--景区认证时间分布end-->
+
+    <!--旅游人.天趋势分析-->
+    <string name="people_day_unit">旅游人·天(万人)</string>
+    <string name="people_day_hint">旅游人·天趋势分析</string>
+    <!--旅游人.天趋势分析end-->
+
+    <!--游客性别比例-->
+    <string name="tourist_sex_title">游客性别比例</string>
+    <!--游客性别比例end-->
+
+    <!--客源地-->
+    <string name="guestSourceTitle">客源地总览</string>
+    <!--客源地end-->
+
+    <!--游客年龄构成-->
+    <string name="guestAgeArrangeTitle">游客年龄构成</string>
+    <string name="guestAgeUnit">百分比 ( % )</string>
+    <!--游客年龄构成  end-->
+    <!--****************************统计相关end****************************-->
+</resources>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--##################首页底部相关##########################-->
+    <!--首页底部背景的颜色-->
+    <color name="main_background_color">#f6f6f6</color>
+    <!--首页底部文字未选中的颜色-->
+    <color name="main_unchecked_text_color">#999999</color>
+    <!--首页底部分割线的颜色-->
+    <color name="vertical_split_color">#DFDFDF</color>
+
+    <!--##################个人中心相关##########################-->
+    <!--个人中心的背景色-->
+    <color name="personal_center_bg">#f1f1f1</color>
+    <!--个人中心描述的字体颜色-->
+    <color name="personal_center_description_text_color">#333333</color>
+    <!--个人中心内容的字体颜色-->
+    <color name="personal_center_content_text_color">#666666</color>
+
+    <!--##################首页相关的颜色##########################-->
+
+    <!--饼形图的5中颜色-->
+    <color name="guide_pie_blue_theme">#01a9b9</color>
+    <color name="guide_pie_sky_blue">#50d1f6</color>
+    <color name="guide_pie_deep_blue">#756ec6</color>
+    <color name="guide_pie_orange">#ff623a</color>
+    <color name="guide_pie_orange_light">#f9773e</color>
+    <color name="guide_pie_yellow">#fadf48</color>
+    <color name="guide_pie_green">#72c152</color>
+    <color name="guide_column_text">#666666</color>
+
+
+
+</resources>

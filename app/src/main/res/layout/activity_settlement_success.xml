@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+    <include layout="@layout/layout_title_bar"/>
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/icon_success"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginBottom="60dp"
+              android:text="@string/settlement_successed"
+              android:textSize="@dimen/sp_16"/>
+
+    <Button android:id="@+id/btn_return"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="75dp"
+            android:background="@drawable/selector_ripper_compat_btn_corner"
+            android:text="@string/settlement_back_list"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"/>
+
+
+</LinearLayout>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/statistics_content_ll_tripData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:background="@mipmap/icon_xingchengriqi"
+            android:textColor="@color/text_primary_light"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_padding"
+            android:text="@string/statistics_trip_data"
+            android:textColor="@color/text_primary_light"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/statistics_content_tv_tripData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_padding"
+            android:textColor="@color/text_primary_light"
+            android:textSize="13sp"
+            tools:text="2017-05-06"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/divider_color"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_top"
+        android:paddingLeft="@dimen/view_margin"
+        android:paddingRight="@dimen/view_margin"
+        android:paddingTop="@dimen/margin_top">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/statistics_content_tv_allteam1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/statistics_all_team"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/statistics_content_tv_allteam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/statistics_content_tv_allteam1"
+                tools:text="1234个"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/statistics_content_tv_allpeople1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statistics_content_tv_allteam1"
+                android:layout_marginTop="@dimen/margin_top2"
+                android:text="@string/statistics_all_people"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/statistics_content_tv_allpeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statistics_content_tv_allteam"
+                android:layout_marginTop="@dimen/margin_top2"
+                android:layout_toRightOf="@+id/statistics_content_tv_allteam1"
+                tools:text="1234个"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/statistics_content_rl_info2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/statistics_content_tv_adult1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成人："
+                android:textColor="@color/text_primary_dark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/statistics_content_tv_adult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/statistics_content_tv_adult1"
+                tools:text="1234个"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/statistics_content_tv_child1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statistics_content_tv_adult1"
+                android:layout_marginTop="@dimen/margin_top2"
+                android:text="儿童："
+                android:textColor="@color/text_primary_dark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/statistics_content_tv_child"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/statistics_content_tv_adult"
+                android:layout_marginTop="@dimen/margin_top2"
+                android:layout_toRightOf="@+id/statistics_content_tv_child1"
+                tools:text="1234个"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/statistics_content_ccv1_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/view_margin"
+            android:paddingRight="@dimen/view_margin">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/statistics_content_ccv1_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/view_padding"
+                android:text="旅行社接待团队统计"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/e4e4e4"/>
+
+        <TextView
+            android:id="@+id/statistics_content_ccv1_tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:text="团数（个）"
+            android:textColor="#666666"
+            android:textSize="11sp"/>
+
+        <com.msy.globalaccess.widget.chartview.CustomColumnChartView
+            android:id="@+id/statistics_content_ccv1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/statistics_content_ccv2_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/e4e4e4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/view_margin"
+            android:paddingRight="@dimen/view_margin">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/statistics_content_ccv2_tv_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/view_padding"
+                android:text="旅行社接待团队人数统计"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color"/>
+
+        <TextView
+            android:id="@+id/statistics_content_ccv2_tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:text="人数（人）"
+            android:textColor="#666666"
+            android:textSize="11sp"/>
+
+        <com.msy.globalaccess.widget.chartview.CustomColumnChartView
+            android:id="@+id/statistics_content_ccv2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更多详细数据请登录PC端查询"
+        android:textSize="11sp"
+        android:textColor="@color/text_hint1"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/personal_center_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/personal_center_ll_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_personal_center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_personal_center_logo"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            style="@style/personal_center_item"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_user_login_account"
+                style="@style/personal_center_content"
+                tools:text="lxs002"/>
+
+            <TextView
+                style="@style/personal_center_description"
+                android:text="@string/personal_center_user_login_account"/>
+        </RelativeLayout>
+
+        <View style="@style/personal_center_divider"/>
+
+        <RelativeLayout style="@style/personal_center_item">
+
+            <TextView
+                style="@style/personal_center_description"
+                android:text="@string/personal_center_user_name"/>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/personal_center_content"
+                tools:text="小明"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/personal_center_item"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/personal_center_description"
+                android:text="@string/personal_center_user_phone"/>
+
+            <TextView
+                android:id="@+id/tv_user_phone"
+                style="@style/personal_center_content"
+                tools:text="13333333333"/>
+        </RelativeLayout>
+
+        <View style="@style/personal_center_divider"/>
+
+        <RelativeLayout style="@style/personal_center_item">
+
+            <TextView
+                style="@style/personal_center_description"
+                android:text="@string/personal_center_user_telephone"/>
+
+            <TextView
+                android:id="@+id/tv_user_telephone"
+                style="@style/personal_center_content"
+                tools:text="010-123456"/>
+        </RelativeLayout>
+
+        <View style="@style/personal_center_divider"/>
+
+        <RelativeLayout style="@style/personal_center_item">
+
+            <TextView
+                style="@style/personal_center_description"
+                android:text="@string/personal_center_user_email"/>
+
+            <TextView
+                android:id="@+id/tv_user_email"
+                style="@style/personal_center_content"
+                tools:text="12346@qq.com"/>
+        </RelativeLayout>
+
+        <View style="@style/personal_center_divider"/>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/list_item_height"
+        android:background="@color/white"
+        android:paddingStart="@dimen/view_margin"
+        android:paddingEnd="@dimen/view_margin">
+
+            <TextView
+                android:id="@+id/tv_address_description"
+                style="@style/personal_center_description"
+                android:layout_centerVertical="true"
+                android:text="@string/personal_center_user_address"/>
+
+            <TextView
+                android:id="@+id/tv_user_address"
+                style="@style/personal_center_content"
+
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="110dp"
+                android:gravity="start"
+                tools:text="北京市"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            style="@style/personal_center_item"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/personal_center_description"
+                android:text="@string/personal_center_user_system"/>
+
+            <TextView
+                android:id="@+id/tv_user_system"
+                style="@style/personal_center_content"
+                tools:text="旅行社"/>
+        </RelativeLayout>
+
+        <View style="@style/personal_center_divider"/>
+
+        <RelativeLayout style="@style/personal_center_item">
+
+            <TextView
+                style="@style/personal_center_description"
+                android:text="@string/personal_center_user_company"/>
+
+            <TextView
+                android:id="@+id/tv_user_company"
+                style="@style/personal_center_content"
+                tools:text="第一旅行社"/>
+        </RelativeLayout>
+
+        <View style="@style/personal_center_divider"/>
+
+        <RelativeLayout style="@style/personal_center_item">
+
+            <TextView
+                style="@style/personal_center_description"
+                android:text="@string/personal_center_user_department"/>
+
+            <TextView
+                android:id="@+id/tv_user_department"
+                style="@style/personal_center_content"
+                tools:text="入境十部"/>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/personal_center_item">
+
+            <TextView
+                style="@style/personal_center_description"
+                android:text="当前版本"/>
+
+            <TextView
+                android:id="@+id/app_version"
+                style="@style/personal_center_content"
+                tools:text="v1.0"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fillet6_solid_lightblue"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/personal_center_user_logout"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</ScrollView>

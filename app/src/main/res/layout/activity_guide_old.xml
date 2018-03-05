@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/layout_title_bar" />-->
+
+    <com.msy.globalaccess.widget.CustomSwipeRefreshLayout
+        android:id="@+id/srl_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/header_guide" />
+
+                <include
+                    android:id="@+id/item_guide_travel"
+                    layout="@layout/item_guide"/>
+
+                <include
+                    android:id="@+id/item_guide_guide"
+                    layout="@layout/item_guide" />
+
+                <include
+                    android:id="@+id/item_guide_pie"
+                    layout="@layout/layout_guide_pie_charts"/>
+
+                <include
+                    android:id="@+id/item_guide_column"
+                    layout="@layout/layout_guide_column_chart"/>
+            </LinearLayout>
+        </ScrollView>
+    </com.msy.globalaccess.widget.CustomSwipeRefreshLayout>
+</LinearLayout>

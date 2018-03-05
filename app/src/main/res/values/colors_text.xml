@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--##################字体颜色##########################-->
+
+    <!--app全局字体颜色-->
+    <color name="text_primary_dark">#333333</color>
+    <color name="text_primary_light">#666666</color>
+
+    <color name="text_orange_color">#f88d31</color>
+    <!--文本的颜色-->
+    <color name="text_guide_blue">#01a9b9</color>
+    <!--提示文版信息颜色-->
+    <color name="text_hint">#4a4a4a</color>
+    <color name="text_hint1">#999999</color>
+</resources>

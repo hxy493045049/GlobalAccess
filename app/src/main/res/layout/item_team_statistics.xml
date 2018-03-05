@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/divider_color"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/rl_view_title"
+            android:layout_width="3dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="12dp"
+            android:background="#01a9b9"/>
+
+        <TextView
+            android:id="@+id/tv_guide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="旅行社当月接待团队龙虎榜"
+            android:textColor="#333333"
+            android:layout_toRightOf="@+id/rl_view_title"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e4e4e4"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/statistics_content_piechart"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:id="@+id/statistics_content_ll_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="@dimen/view_margin">
+
+            <RelativeLayout
+                android:id="@+id/statistics_content_rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_ratio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    tools:text="(20%)"
+                    />
+
+                <View
+                    android:id="@+id/statistics_content_Color1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/chart_solid_blue_theme_3dp"/>
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_tracel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/statistics_content_tv_ratio1"
+                    android:layout_toRightOf="@+id/statistics_content_Color1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxWidth="120dp"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="12sp"
+                    tools:text="张家界第一旅行第三方高峰低谷"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/statistics_content_rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_ratio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    tools:text="(20%)"
+                    />
+
+                <View
+                    android:id="@+id/statistics_content_Color2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/chart_solid_dark_green_3dp"/>
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_tracel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/statistics_content_tv_ratio2"
+                    android:layout_toRightOf="@+id/statistics_content_Color2"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxWidth="120dp"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="12sp"
+                    tools:text="张家界第一旅行第三方高峰低谷"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/statistics_content_rl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_ratio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    tools:text="(20%)"
+                    />
+
+                <View
+                    android:id="@+id/statistics_content_Color3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/chart_solid_orange_3dp"/>
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_tracel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/statistics_content_tv_ratio3"
+                    android:layout_toRightOf="@+id/statistics_content_Color3"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxWidth="120dp"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="12sp"
+                    tools:text="张家界第一旅行第三方高峰低谷"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/statistics_content_rl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_ratio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    tools:text="(20%)"
+                    />
+
+                <View
+                    android:id="@+id/statistics_content_Color4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/chart_solid_yellow_3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_tracel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/statistics_content_tv_ratio4"
+                    android:layout_toRightOf="@+id/statistics_content_Color4"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxWidth="120dp"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="12sp"
+                    tools:text="张家界第一旅行第三方高峰低谷"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/statistics_content_rl5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_ratio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    tools:text="(20%)"
+                    />
+
+                <View
+                    android:id="@+id/statistics_content_Color5"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/chart_solid_blue_sky_3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_tracel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/statistics_content_tv_ratio5"
+                    android:layout_toRightOf="@+id/statistics_content_Color5"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxWidth="120dp"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="12sp"
+                    tools:text="张家界第一旅行第三方高峰低谷"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/statistics_content_rl6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_ratio6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    tools:text="(20%)"
+                    />
+
+                <View
+                    android:id="@+id/statistics_content_Color6"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/chart_solid_blue_deep_3dp"
+                    />
+
+                <TextView
+                    android:id="@+id/statistics_content_tv_tracel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@id/statistics_content_tv_ratio6"
+                    android:layout_toRightOf="@+id/statistics_content_Color6"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxWidth="120dp"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="12sp"
+                    tools:text="张家界第一旅行第三方高峰低谷"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

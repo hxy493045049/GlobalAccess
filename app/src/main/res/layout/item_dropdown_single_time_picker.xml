@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTimeBegin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_bottom_gray_dark"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_padding"
+        android:paddingRight="@dimen/activity_horizontal_padding">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTimeBeginLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="@dimen/sp_14"
+            tools:text="@string/travel_begin"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTimeBegin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border1px_solidtransparent"
+            android:drawableEnd="@mipmap/icon_arrow_down"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="@dimen/sp_14"
+            tools:text="2017-03-16"/>
+
+        <TextView
+            android:id="@+id/tvDeleteStart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@mipmap/icon_search_delete"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTimeEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_bottom_gray_dark"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_padding"
+        android:paddingRight="@dimen/activity_horizontal_padding">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTimeEndLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="@dimen/sp_14"
+            tools:text="@string/travel_end"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTimeEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border1px_solidtransparent"
+            android:drawableEnd="@mipmap/icon_arrow_down"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="@dimen/sp_14"
+            tools:text="2017-03-16"/>
+
+        <TextView
+            android:id="@+id/tvDeleteEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@mipmap/icon_search_delete"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp"/>
+    </LinearLayout>
+</LinearLayout>

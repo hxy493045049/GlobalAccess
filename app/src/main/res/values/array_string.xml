@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--旅行社首页的3个模块的标题-->
+    <string-array name="titleDescription">
+        <item>团队列表</item>
+        <item>导游委派列表</item>
+        <item>结算管理</item>
+        <item>个人中心</item>
+    </string-array>
+    <!--旅游局首页的3个模块的标题-->
+    <string-array name="touristTitleDescription">
+        <item>数据概览</item>
+        <item>团队信息统计</item>
+        <item>个人中心</item>
+    </string-array>
+    <!--旅游局首页的3个统计查询的标题-->
+    <string-array name="touristTitleStatistics">
+        <item>团队信息统计 </item>
+        <item>团队地区构成 </item>
+        <item>团队认证统计 </item>
+        <item>团队信息查询 </item>
+    </string-array>
+    <!--团队模块的子标题-->
+    <string-array name="teamModule">
+        <item>全部</item>
+        <item>出团待审批</item>
+        <item>变更待审批</item>
+        <item>作废待审批</item>
+    </string-array>
+    <!--团队模块的子标题-->
+    <string-array name="teamDetailModule">
+        <item>基本信息</item>
+        <item>客源地</item>
+        <item>运输车辆</item>
+        <item>导游</item>
+    </string-array>
+    <!--结算模块的子标题-->
+    <string-array name="settlementModule">
+        <item>全部</item>
+        <item>预支付</item>
+        <item>追加预支付</item>
+        <item>退款</item>
+    </string-array>
+
+    <!--新增导游的导游信息-->
+    <string-array name="freeGuiderInfo">
+        <item>导游信息</item>
+        <item>导游证号</item>
+        <item>导游姓名</item>
+        <item>挂靠机构</item>
+    </string-array>
+
+    <!--旅游局查询条件-->
+    <string-array name="touristAdminQueryCondition">
+        <item>处理类型</item>
+        <item>业务状态</item>
+        <item>团队编号</item>
+        <item>创建日期</item>
+
+    </string-array>
+
+    <!--导游委派-->
+    <string-array name="touristDelegate">
+        <item>全部</item>
+        <item>处理中</item>
+        <item>已通过</item>
+        <item>未通过</item>
+    </string-array>
+    <string-array name="delegateSearchType">
+        <item>申请委派</item>
+        <item>取消委派</item>
+
+    </string-array>
+    <string-array name="delegateSearchStatus">
+        <item>处理中</item>
+        <item>未通过</item>
+        <item>已通过</item>
+    </string-array>
+    <string-array name="guestSourceStatisticsItem">
+        <item>客源地总览</item>
+        <item>境内客源地总览</item>
+        <item>境外客源地总览</item>
+    </string-array>
+
+    <string-array name="guestStaticticsConditions">
+        <item>今日客源地总览</item>
+        <item>近一周客源地总览</item>
+        <item>近一个月客源地总览</item>
+        <item>近三个月客源地总览</item>
+        <item>近六个月客源地总览</item>
+        <item>近一年客源地总览</item>
+    </string-array>
+
+    <string-array name="guestInboundStaticticsConditions">
+        <item>今日境内客源地总览</item>
+        <item>近一周境内客源地总览</item>
+        <item>近一个月境内客源地总览</item>
+        <item>近三个月境内客源地总览</item>
+        <item>近六个月境内客源地总览</item>
+        <item>近一年境内客源地总览</item>
+    </string-array>
+
+    <string-array name="guestOutboundStaticticsConditions">
+        <item>今日境外客源地总览</item>
+        <item>近一周境外客源地总览</item>
+        <item>近一个月境外客源地总览</item>
+        <item>近三个月境外客源地总览</item>
+        <item>近六个月境外客源地总览</item>
+        <item>近一年境外客源地总览</item>
+    </string-array>
+
+    <string-array name="guestAgeConditions">
+        <item>今日游客年龄构成</item>
+        <item>近一周游客年龄构成</item>
+        <item>近一个月游客年龄构成</item>
+        <item>近三个月游客年龄构成</item>
+        <item>近六个月游客年龄构成</item>
+        <item>近一年游客年龄构成</item>
+    </string-array>
+
+    <string-array name="scenicAuthTimeConditions">
+        <item>今日</item>
+        <item>近一周</item>
+        <item>近一个月</item>
+        <item>近三个月</item>
+        <item>近六个月</item>
+        <item>近一年</item>
+    </string-array>
+    <string-array name="sexStatisticsConditions">
+        <item>今日游客性别比例</item>
+        <item>近一周游客性别比例</item>
+        <item>近一个月游客性别比例</item>
+        <item>近三个月游客性别比例</item>
+        <item>近六个月游客性别比例</item>
+        <item>近一年游客性别比例</item>
+    </string-array>
+    <string-array name="authScenicItem">
+        <item>全部_</item>
+        <item>张家界大峡谷旅游区_300000</item>
+        <item>武陵源核心景区(吴家峪门票站)_300006</item>
+        <item>武陵源核心景区(森林公园门票站)_300005</item>
+        <item>天门山旅游区_300011</item>
+    </string-array>
+</resources>

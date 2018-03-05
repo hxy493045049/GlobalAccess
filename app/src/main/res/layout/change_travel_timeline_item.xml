@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/change_travel_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/view_margin"
+        android:paddingRight="@dimen/view_margin"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:id="@+id/change_travel_img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@mipmap/icon_tdxq_day1"/>
+        <TextView
+            android:id="@+id/change_travel_tv_line"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="4dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/change_travel_img_icon"/>
+        <ImageView
+            android:id="@+id/change_travel_img_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_tdxq_didian"
+            android:layout_marginLeft="1dp"
+            android:layout_below="@+id/change_travel_tv_line"/>
+        <TextView
+            android:id="@+id/change_travel_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="第一天 2017-02-09"
+            android:textColor="@color/text_primary_dark"
+            android:layout_marginLeft="9dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/change_travel_img_icon"/>
+        <TextView
+            android:id="@+id/change_travel_tv_county"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="张家界"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/change_travel_tv_title"
+            android:layout_alignLeft="@+id/change_travel_tv_title"/>
+
+        <ImageView
+            android:id="@+id/change_travel_img_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_arrow_right"
+            android:layout_marginRight="@dimen/view_margin"
+            android:layout_alignBottom="@+id/change_travel_img_icon2"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/change_travel_tv_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_backgroud"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/change_travel_img_next"
+            />
+    </RelativeLayout>
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="15dp">
+
+         <RelativeLayout
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="match_parent"
+             >
+
+             <TextView
+                 android:id="@+id/change_travel_line_up"
+                 android:layout_width="1dp"
+                 android:layout_height="16dp"
+                 android:layout_centerHorizontal="true"
+                 android:background="@color/colorPrimary"/>
+
+             <ImageView
+                 android:id="@+id/change_travel_img_icon"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/change_travel_line_up"
+                 android:background="@mipmap/icon_tdxq_day1"
+                 android:layout_centerHorizontal="true"/>
+
+             <ImageView
+                 android:layout_width="1dp"
+                 android:layout_height="match_parent"
+                 android:layout_below="@+id/change_travel_img_icon"
+                 android:layout_centerInParent="true"
+                 android:background="@color/colorPrimary"/>
+         </RelativeLayout>
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="40dp"
+             android:layout_weight="8"
+             android:gravity="center|left"
+             android:orientation="vertical">
+
+             <TextView
+                 android:id="@+id/change_travel_tv_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 tools:text="第一天 2017-02-09（张家界）"
+                 android:textColor="@color/colorPrimary"
+                 android:textSize="12sp"/>
+         </LinearLayout>
+
+         <ImageView
+             android:id="@+id/change_travel_img_next"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:src="@mipmap/icon_arrow_right"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="@dimen/view_margin"/>
+     </LinearLayout>
+     <TextView
+         android:id="@+id/change_travel_tv_divider"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@color/gray_backgroud"
+         android:layout_marginTop="15dp"
+         android:visibility="gone"/>-->
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/llGuiderItem"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/selector_ripper_item_background"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/activity_horizontal_padding"
+              android:paddingTop="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/activity_horizontal_padding">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvGuiderName"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="@dimen/sp_12"
+            tools:text="李小萌"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvGuiderPhone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="@dimen/sp_12"
+            tools:text="178454659795"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/btnDelegate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_ripper_compat_btn2"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/guider_delegate"
+            android:textColor="@color/text_guide_blue"
+            android:textSize="@dimen/sp_12"
+            tools:text="@string/guider_delegate"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/btnDelete"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_ripper_compat_btn2"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/delete"
+            android:textColor="@color/text_guide_blue"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone"
+            tools:text="@string/delete"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/activity_horizontal_padding">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/guider_identity_number"
+            android:textColor="@color/text_primary_light"
+            android:textSize="@dimen/sp_12"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvGuiderIdentify"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/text_primary_light"
+            android:textSize="@dimen/sp_12"
+            tools:text="SKDHKH172KSDXHVIUY98723"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/activity_horizontal_padding">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/guider_delegate_time"
+            android:textColor="@color/text_primary_light"
+            android:textSize="@dimen/sp_12"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvTimeRange"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/text_primary_light"
+            android:textSize="@dimen/sp_12"
+            tools:text="2017-1-1 08:30 至 2019-01-01 18:30"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/guider_affiliate_unit"
+            android:textColor="@color/text_primary_light"
+            android:textSize="@dimen/sp_12"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvAffiliateUnit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/text_primary_light"
+            android:textSize="@dimen/sp_12"
+            tools:text="康辉旅行社"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@mipmap/icon_added"/>
+    </LinearLayout>
+</LinearLayout>

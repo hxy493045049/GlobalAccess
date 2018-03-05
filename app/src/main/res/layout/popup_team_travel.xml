@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        android:background="#f0f0f0"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:gravity="center_vertical">
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_search_travel"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawableLeft="@mipmap/icon_popup_search"
+            android:background="@drawable/bg_gray_rectangle_25dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:hint="请输入旅行社"
+            android:textColorHint="#999999"
+            android:textSize="14sp"
+            android:drawablePadding="6dp"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_popup_travel"
+        android:layout_width="match_parent"
+        android:layout_height="315dp">
+    </android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="确定"
+        android:textSize="15sp"
+        android:background="@drawable/bg_primary_4_5dp"/>
+</LinearLayout>

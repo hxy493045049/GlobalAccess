@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/submit"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="31dp"
+                        android:layout_marginLeft="@dimen/pressed_Z"
+                        android:gravity="center_vertical"
+                        android:text="@string/edit_scenic_info"
+                        android:textColor="@color/personal_center_content_text_color"
+                        android:textSize="@dimen/sp_12" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/pressed_Z"
+                        android:paddingLeft="@dimen/pressed_Z"
+                        android:paddingTop="@dimen/pressed_Z">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/pressed_Z">
+
+                            <TextView
+                                android:id="@+id/scenic_spot_change"
+                                android:layout_width="70dp"
+                                android:layout_height="27dp"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/fillet6_solid_darkblue"
+                                android:gravity="center"
+                                android:text="@string/change_scenic_spot"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp_12" />
+
+                            <TextView
+                                android:id="@+id/scenic_spot_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="27dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center"
+                                android:text="森林公园"
+                                android:textColor="@color/personal_center_description_text_color"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginBottom="@dimen/margin_top2"
+                            android:layout_marginTop="@dimen/margin_top2"
+                            android:background="@color/e4e4e4" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="@dimen/pressed_Z">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="@string/peoper_count"
+                                android:textColor="@color/personal_center_content_text_color"
+                                android:textSize="@dimen/sp_12" />
+
+
+                            <TextView
+                                android:id="@+id/scenic_spot_man"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:layout_toLeftOf="@+id/scenic_spot_chiled"
+                                android:textColor="@color/personal_center_description_text_color"
+                                android:textSize="@dimen/sp_12" />
+
+                            <TextView
+                                android:id="@+id/scenic_spot_chiled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/personal_center_description_text_color"
+                                android:textSize="@dimen/sp_12" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginBottom="@dimen/margin_top2"
+                            android:layout_marginTop="@dimen/margin_top2"
+                            android:background="@color/e4e4e4" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingRight="@dimen/pressed_Z">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="@string/prepay"
+                                android:textColor="@color/personal_center_content_text_color"
+                                android:textSize="@dimen/sp_12" />
+
+                            <TextView
+                                android:id="@+id/prepay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/sp_12"
+                                tools:text="300" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ticket_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="31dp"
+                            android:layout_marginLeft="@dimen/pressed_Z"
+                            android:gravity="center_vertical"
+                            android:text="@string/edit_ticket_info"
+                            android:textColor="@color/personal_center_content_text_color"
+                            android:textSize="@dimen/sp_12" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:paddingStart="12dp"
+                            android:paddingTop="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/ticket_info"
+                                    android:textColor="@color/personal_center_content_text_color"
+                                    android:textSize="@dimen/sp_12" />
+
+                                <LinearLayout
+                                    android:id="@+id/ticket_price_lin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"></LinearLayout>
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginBottom="@dimen/margin_top2"
+                                android:layout_marginTop="@dimen/margin_top2"
+                                android:background="@color/e4e4e4" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/edit_scenic_count_info"
+                                android:textColor="@color/personal_center_content_text_color"
+                                android:textSize="@dimen/sp_12" />
+
+                            <LinearLayout
+                                android:id="@+id/ticket_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_marginBottom="@dimen/margin_top2"
+                                android:layout_marginTop="@dimen/margin_top2"
+                                android:background="@color/e4e4e4" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_top2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/settle_accounts"
+                                    android:textColor="@color/personal_center_content_text_color"
+                                    android:textSize="@dimen/sp_12" />
+
+                                <TextView
+                                    android:id="@+id/jiesuan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:textColor="@color/personal_center_content_text_color"
+                                    android:textSize="@dimen/sp_12" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="12dp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/e4e4e4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_top2"
+                            android:text="@string/edit_scenic_remark"
+                            android:textColor="@color/personal_center_content_text_color"
+                            android:textSize="@dimen/sp_12" />
+
+                        <EditText
+                            android:id="@+id/scenic_spot_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/fellet6_soild_drakgray"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="top"
+                            android:hint="@string/remark_hint"
+                            android:padding="10dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/personal_center_description_text_color"
+                            android:textColorHint="@color/main_unchecked_text_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="@string/edit_scenic_sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_title_size" />
+    </RelativeLayout>
+</LinearLayout>

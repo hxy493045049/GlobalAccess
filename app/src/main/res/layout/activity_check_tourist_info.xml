@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".business.travelAgency.team.ui.CheckTouristInfoActivity">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/activity_check_tourist_nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/activity_check_tourist_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/view_padding"
+                android:paddingLeft="@dimen/view_margin"
+                android:paddingRight="@dimen/view_margin"
+                android:paddingTop="@dimen/view_padding"
+                android:text="旅游团信息"
+                android:textColor="@color/text_primary_dark"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider_bottom_gray_dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/view_margin"
+                android:paddingRight="@dimen/view_margin">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/view_padding"
+                    android:paddingTop="15dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="旅行社："
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/check_tourist_tv_travelAgentName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12"
+                        tools:text="第一国际" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="团队编号："
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/check_tourist_tv_teamCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12"
+                        tools:text="H77836481658816" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/view_padding"
+                    android:paddingTop="@dimen/view_padding">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="司机电话："
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/check_tourist_tv_driverPhones"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12"
+                        tools:text="13139269876" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="行程日期："
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/check_tourist_tv_tripData"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12"
+                        tools:text="2017-02-10-2017-02-15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/view_padding"
+                    android:paddingTop="@dimen/view_padding">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="导游："
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/check_tourist_tv_guide"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12"
+                        tools:text="大型" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="车牌号："
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/check_tourist_tv_vehicleInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textColor="@color/text_primary_light"
+                        android:textSize="@dimen/sp_12"
+                        tools:text="45位" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/solid_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/view_margin"
+                android:paddingRight="@dimen/view_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="@dimen/view_padding"
+                    android:paddingTop="@dimen/view_padding"
+                    android:text="游客名单"
+                    android:textColor="@color/text_primary_dark"
+                    android:textSize="13dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/check_tourist_tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="12sp"
+                    tools:text="总人数26（成人：18  儿童：8）" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider_bottom_gray_dark" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/check_tourist_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/view_padding"
+                android:paddingLeft="@dimen/view_padding"
+                android:paddingRight="@dimen/view_padding" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

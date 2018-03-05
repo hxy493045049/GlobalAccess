@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_spot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".business.travelAgency.touristSpots.ui.SearchSpotActivity">
+    <LinearLayout
+        android:id="@+id/search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="@dimen/view_margin"
+        android:paddingRight="@dimen/view_margin"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <com.msy.globalaccess.widget.ClearEditText
+            android:id="@+id/auto_search_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:background="@drawable/search_input_white"
+            android:gravity="left|center_vertical"
+            android:hint="景点名称"
+            android:lines="1"
+            android:singleLine="true"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:textColor="@android:color/black"
+            android:textColorHint="#999999"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/search_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/search_spots_swipeRefre"
+        android:layout_below="@+id/search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_spots_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:padding="6dp"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

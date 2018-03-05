@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/ticket_name"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        android:textColor="@color/personal_center_content_text_color"
+        android:textSize="@dimen/sp_12"
+        tools:text="@string/ticket_man" />
+
+    <EditText
+        android:id="@+id/ticket_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/fellet6_soild_drakgray"
+        android:inputType="number"
+        android:maxLength="3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="@color/main_unchecked_text_color"
+        android:textSize="12sp"
+        tools:text="@string/ticket_man_hint" />
+</LinearLayout>

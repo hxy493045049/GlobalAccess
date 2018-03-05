@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--由于5.0以下会自动增加内边距,所以定义不同的值-->
+    <dimen name="floating_action_button_margin">16dp</dimen>
+</resources>

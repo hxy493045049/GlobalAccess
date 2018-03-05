@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--******************转场动画******************-->
+    <style name="fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <!--举例说明  a  >>>  跳转到b -->
+    <style name="transitionX" parent="@android:style/Animation.Activity">
+        <!--b进入的动画-->
+        <item name="android:activityOpenEnterAnimation">@anim/right_in_x</item>
+        <!--a退出的动画-->
+        <item name="android:activityOpenExitAnimation">@anim/left_out_x</item>
+
+        <!--a 的恢复动画-->
+        <item name="android:activityCloseEnterAnimation">@anim/left_in_x</item>
+        <!--b的退出动画-->
+        <item name="android:activityCloseExitAnimation">@anim/right_out_x</item>
+    </style>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <com.msy.globalaccess.widget.wheelview.WheelView
+        android:id="@+id/wheel_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/wheel_view"
+        android:layout_height="44dp"
+        android:background="@color/divider_color_dark">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#585858"
+            android:textSize="14sp"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/done"
+            android:layout_toRightOf="@+id/cancel"
+            android:background="@drawable/bg_gray_rectangle_25dp"
+            android:drawableLeft="@mipmap/icon_popup_search"
+            android:drawablePadding="6dp"
+            android:hint="请输入旅行社"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="#999999"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="#585858"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

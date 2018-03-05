@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--*********************** todo 不同页面的不同配置写在这里 ***********************-->
+
+    <!--***********************空页面,错误页面***********************-->
+    <!--默认图片的带下,用于空view-->
+    <dimen name="def_img_size">160dp</dimen>
+
+    <!--***********************首页底部按钮的高度***********************-->
+    <!--主页底部字体的大小-->
+    <dimen name="main_bottom_text_size">11sp</dimen>
+    <!--主页标题字体的大小-->
+    <dimen name="main_title_size">18sp</dimen>
+
+    <!--***********************团队列表item控件宽度***********************-->
+    <dimen name="item_team_text_width">70dp</dimen>
+    <dimen name="item_team_text_height">40dp</dimen>
+
+    <!--***********************个人中心***********************-->
+    <!--个人中心字体的大小-->
+    <dimen name="personal_center_text_size">13sp</dimen>
+    <!-- 头部的高度-->
+    <dimen name="personal_center_header_height">125dp</dimen>
+    <dimen name="login_text_size">18sp</dimen>
+
+    <!--***********************登录页面***********************-->
+    <dimen name="login_horizentoal_margin">28dp</dimen>
+    <dimen name="login_logo_width">175dp</dimen>
+    <dimen name="login_logo_height">136dp</dimen>
+
+    <!--***********************结算页面***********************-->
+    <!--item高度-->
+    <dimen name="list_item_height">42dp</dimen>
+    <dimen name="item_horizontal_padding">12dp</dimen>
+
+    <!--***********************未分类,请自行认领***********************-->
+    <dimen name="view_height">40dp</dimen>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="margin_top2">15dp</dimen>
+    <dimen name="view_padding">10dp</dimen>
+    <dimen name="view_margin">12dp</dimen>
+    <dimen name="card_padding">0dp</dimen>
+
+    <!--***********************首页相关***********************-->
+    <!--轮播图的高度-->
+    <dimen name="guide_banner_height">150dp</dimen>
+</resources>

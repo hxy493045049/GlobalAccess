@@ -1,0 +1,248 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/material_blue_grey_200"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/card_padding"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/view_margin"
+        android:paddingRight="@dimen/view_margin"
+        >
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/team_detail_transport_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车辆1"
+            android:textSize="13sp"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/view_padding"
+            android:paddingTop="15dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="用车模式："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_transport_tv_useTypeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                tools:text="本地采购"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="运输公司："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_transport_tv_companyName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                tools:text="张家界旅游客运有限公司"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/view_padding"
+            android:paddingTop="@dimen/view_padding"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="司机电话："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_transport_tv_driverPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="left"
+                tools:text="13139269876"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="车牌号："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_transport_tv_vehicleNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                tools:text="湘A123456"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/view_padding"
+            android:paddingTop="@dimen/view_padding"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="车辆型号："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_transport_tv_vehicleTypeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                tools:text="大型"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="座位数量："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_transport_tv_seatAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                tools:text="45位"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/view_padding"
+            android:paddingTop="@dimen/view_padding"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="预付款："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_transport_tv_prePayMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                tools:text="￥150"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="备注："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_transport_tv_comments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                tools:text="请提前联系司机"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

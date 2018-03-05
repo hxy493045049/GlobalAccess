@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_backgroud"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider_bottom_gray_dark"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/activity_horizontal_padding"
+        android:paddingRight="@dimen/activity_horizontal_padding"
+        android:paddingTop="10dp"
+        android:text="@string/guider_info"
+        android:textColor="@color/text_primary_dark"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="@dimen/activity_horizontal_padding"
+        android:paddingRight="@dimen/activity_horizontal_padding"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/guider_identity_number"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvGuiderID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="3524874548784546" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/guider_name"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvGuiderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="刘佳佳" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/guider_gender"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvGuiderGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="女" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/guider_phone"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvGuiderPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="15010579845" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/guider_delegate_begin"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvDelegateBegin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="2017-03-15  10:00" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/guider_delegate_end"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvDelegateEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="2017-03-18  18:00" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="挂靠机构"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvAffiliateUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="康辉旅行社" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/guider_delegate_status"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvDelegateStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:maxLines="1"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="未委派" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/guider_delegate_operation"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tvDelegateOperate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="申请委派" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_padding"
+        android:layout_marginStart="@dimen/activity_horizontal_padding"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/ckProtocol"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/selector_ck1"
+            android:button="@null"
+            android:checked="true"
+            android:padding="5dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/protocol_hint"
+            android:textColor="@color/text_primary_light" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvProtocolLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/protocol_delegate_link"
+            android:textColor="@color/text_guide_blue" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvDelegateConfirm"
+        style="@style/CommonBottomBtnStyle"
+        android:gravity="center"
+        android:text="@string/confirm" />
+</LinearLayout>

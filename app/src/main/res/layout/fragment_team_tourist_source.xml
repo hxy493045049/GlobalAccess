@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_marginRight="@dimen/view_margin"
+        android:paddingBottom="@dimen/view_padding"
+        android:paddingTop="@dimen/view_padding"
+        android:text="客源地"
+        android:textColor="@color/text_primary_dark"
+        android:textSize="13dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider_bottom_gray"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/detail_look_tourist_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/detail_look_tourist_info"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="@dimen/view_padding"
+        android:background="@drawable/fillet6_solid_lightblue"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:text="查看游客名单"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+</LinearLayout>

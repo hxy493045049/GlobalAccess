@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--******************一些通用的style******************-->
+    <!--tabLayout的样式-->
+    <style name="DefaultTabStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">10dp</item>
+        <item name="tabPaddingEnd">10dp</item>
+        <item name="tabMinWidth">0dp</item>
+        <item name="tabTextAppearance">@style/TabAppearance</item>
+        <item name="tabSelectedTextColor">@color/colorPrimaryDark</item>
+    </style>
+    <!-- tabLayout text -->
+    <style name="TabAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_tab_size</item>
+        <item name="android:textColor">@color/text_primary_dark</item>
+    </style>
+
+    <!--通用的底部按钮的样式-->
+    <style name="CommonBottomBtnStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/bottom_height</item>
+        <item name="android:background">@drawable/selector_ripper_compat_btn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_bottom_btn</item>
+    </style>
+    <!--白色背景-->
+    <style name="WhiteBg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--空布局,错误布局,已经加载中布局  的 图片尺寸-->
+    <style name="ImgEmpty">
+        <item name="android:layout_width">@dimen/def_img_size</item>
+        <item name="android:layout_height">@dimen/def_img_size</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!--edittext-->
+    <style name="Widget.EditText.White" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--divider-->
+    <style name="DividerMarginLeft_12">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/divider_color_dark</item>
+        <item name="android:layout_marginLeft">@dimen/item_horizontal_padding</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/divider_color_dark</item>
+    </style>
+
+    <!--item-->
+    <!--item的容器, 高42 宽填满,左右padding12,可点击,横向排列,垂直居中-->
+    <style name="SelectableItemBg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/item_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/item_horizontal_padding</item>
+    </style>
+</resources>

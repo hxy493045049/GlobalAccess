@@ -1,0 +1,182 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/material_blue_grey_200"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/card_padding"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/view_margin"
+        android:paddingRight="@dimen/view_margin"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/team_detail_ciceron_head"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_ciceron_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textColor="@color/text_guide_blue"
+                android:textSize="@dimen/sp_12"
+                tools:text="小明"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/view_padding"
+            android:paddingTop="10dp"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="导游证号："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_ciceron_guideCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="SG201402091245789"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="姓名："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="15522875439"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/view_padding"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="手机号："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_ciceron_phoneNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="15522875439"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="委派时间："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_ciceron_appointDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="2017-02-05至2017-02-09"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="@dimen/view_padding"
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="挂靠机构："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/team_detail_ciceron_travelAgentName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                tools:text="张家界旅游集团"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

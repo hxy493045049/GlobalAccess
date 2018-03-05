@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tvTourism"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/view_margin"
+        android:paddingRight="@dimen/view_margin"
+        android:paddingTop="@dimen/margin_top2"
+        android:paddingBottom="@dimen/margin_top2"
+        android:text="按旅行社"
+        android:textSize="14sp"
+        android:drawableRight="@mipmap/icon_check_theme"
+        android:textColor="@color/colorPrimary"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color_dark"/>
+    <TextView
+        android:id="@+id/tvScenicSpot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/view_margin"
+        android:paddingRight="@dimen/view_margin"
+        android:paddingTop="@dimen/margin_top2"
+        android:paddingBottom="@dimen/margin_top2"
+        android:text="按景点"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary_dark"/>
+</LinearLayout>

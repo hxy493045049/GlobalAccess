@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--这里放置全局的字体配置-->
+    <dimen name="text_dialog_title">18sp</dimen>
+    <dimen name="text_bottom_btn">18sp</dimen>
+    <dimen name="text_tab_size">14sp</dimen>
+    <dimen name="text_dropdown_title_size">14sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="chart_text_size">11sp</dimen>
+</resources>

@@ -1,0 +1,300 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/material_blue_grey_200"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/card_padding"
+    tools:context=".business.travelAgency.team.ui.TeamEssentialInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/view_padding"
+            android:paddingTop="@dimen/view_padding"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:text="团队信息"
+            android:textColor="@color/text_primary_dark"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_bottom_gray_dark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:paddingBottom="@dimen/view_padding"
+            android:paddingTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="团号："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/baseinfo_tv_teamCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                tools:text="KH201737"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            >
+
+            <TextView
+                android:id="@+id/baseinfo_tv_travel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="部门："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/baseinfo_tv_travelDepName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                tools:text="高桥店专用"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:paddingBottom="@dimen/view_padding"
+            android:paddingTop="@dimen/view_padding"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="团队类型："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/baseinfo_tv_teamTypeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                tools:text="地接、入境游"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="线路名称："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                android:id="@+id/textView"/>
+
+            <TextView
+                android:id="@+id/baseinfo_tv_lineName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                tools:text="121"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:paddingBottom="@dimen/view_padding"
+            android:paddingTop="@dimen/view_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="组团社："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"
+                />
+
+            <TextView
+                android:id="@+id/baseinfo_tv_teamGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                tools:text="121"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:paddingBottom="@dimen/view_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="领队全陪："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/baseinfo_tv_leader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                tools:text="否"
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="到达时间/方式："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/baseinfo_tv_departureInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/text_primary_light"
+                tools:text="2017-02-07 10：00 黄石/飞机"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:paddingBottom="@dimen/view_padding"
+            android:paddingTop="@dimen/view_padding"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="离开时间/方式："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/baseinfo_tv_returnInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/text_primary_light"
+                tools:text="2017-02-09 10：00 黄石/飞机"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:paddingBottom="15dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="保险："
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/baseinfo_tv_insInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/text_primary_light"
+                tools:text="未购旅行社责任险、未购团队意外险"
+
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

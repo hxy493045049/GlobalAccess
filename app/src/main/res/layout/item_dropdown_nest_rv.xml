@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/divider_bottom_gray_dark"
+              android:orientation="horizontal"
+              android:paddingBottom="15dp"
+              android:paddingTop="15dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_padding"
+        android:layout_marginStart="@dimen/activity_horizontal_padding"
+        android:background="@drawable/sel_btn_white_blue"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="7dp"
+        android:paddingEnd="@dimen/activity_horizontal_padding"
+        android:paddingStart="@dimen/activity_horizontal_padding"
+        android:textColor="@drawable/sel_text_black_white"
+        android:paddingTop="7dp"
+        android:text="@string/all"
+        android:textSize="12sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvTeamType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_padding"/>
+
+</LinearLayout>

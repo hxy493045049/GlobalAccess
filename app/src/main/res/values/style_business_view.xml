@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--这里放置各个不同布局定制的配置-->
+    <!--#########################结算详情页###########################-->
+    <!--textview-->
+    <style name="SettlementBaseTv">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/text_primary_light</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--左边的字体样式-->
+    <style name="SettlementDetailTvLeft" parent="@style/SettlementBaseTv">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!--右边的字体样式-->
+    <style name="SettlementDetailTvRight" parent="@style/SettlementBaseTv">
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!--详细描述的样式-->
+    <style name="SettlementDetailDesc" parent="@style/SettlementBaseTv">
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!--#########################主页相关###########################-->
+    <!--主页底部的统一样式-->
+    <style name="MainBottomRadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textSize">@dimen/main_bottom_text_size</item>
+        <item name="android:textColor">@drawable/selector_text_main</item>
+    </style>
+
+    <!--#########################个人中心相关###########################-->
+    <!--个人中心的每个item的样式-->
+    <style name="personal_center_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/view_margin</item>
+        <item name="android:paddingEnd">@dimen/view_margin</item>
+    </style>
+    <!--个人中心的描述的字体样式（左边）-->
+    <style name="personal_center_description">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/personal_center_description_text_color</item>
+        <item name="android:textSize">@dimen/personal_center_text_size</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+    <!--个人中心的内容的字体样式（右边）-->
+    <style name="personal_center_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/personal_center_content_text_color</item>
+        <item name="android:textSize">@dimen/personal_center_text_size</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <!--个人中心的分割线样式-->
+    <style name="personal_center_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/divider_color_dark</item>
+        <item name="android:paddingLeft">@dimen/item_horizontal_padding</item>
+    </style>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/line_up"
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"/>
+        <ImageView
+            android:id="@+id/team_detail_timeline_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_up"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_below="@+id/team_detail_timeline_icon"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimary"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="9"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/team_detail_timeline_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第一天 2017-02-09（张家界）"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/team_detail_timeline_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/view_padding"
+            android:textColor="@color/text_primary_light"/>
+    </LinearLayout>
+</LinearLayout>

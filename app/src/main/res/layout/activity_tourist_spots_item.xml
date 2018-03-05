@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tourist_spots_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_backgroud"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".business.travelAgency.touristSpots.ui.TouristSpotsActivity">
+    <TextView
+        android:id="@+id/spot_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="天门山"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary_light"
+        android:gravity="center"
+        android:lines="2"
+        android:ellipsize="end"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="@drawable/bg_gray_retangle_5dp"/>
+</LinearLayout>
