@@ -94,7 +94,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
         } else if (BuildConfig.ENVIRONMENT.equals("qyb")) {
             appCompatImageView.setImageResource(R.mipmap.ic_qyb_logo);
         }
-        if (BuildConfig.IS_DEBUG) {
+        if (!BuildConfig.IS_DEBUG) {
             if(loginUserType.equals(UserRoleType.JOURNEY)){
 //                name.setText("mj_lxs");
 //                pwd.setText("12345678");
